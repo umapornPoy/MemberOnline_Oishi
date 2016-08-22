@@ -6,14 +6,10 @@ using System.Web.Mvc;
 
 namespace MemberOnline.Controllers
 {
-    public class HomeController : Controller
+    public class MapsController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult dashboard()
+        // GET: Maps
+        public ActionResult maps()
         {
             return View();
         }
