@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- START GOOGLE WORLD MAP -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Google Map</h3>
+                    </div>
+                    <div class="panel-body panel-body-map">
+                        <div id="map" style="width: 100%; height: 500px"></div>
+                    </div>
+                </div>
+                <!-- END GOOGLE WORLD MAP-->
+            </div>
+        </div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGlI5Aps4McAxmCmbPJiuhwK3OakNsbg&callback=initMap"
+            async defer></script>
+</body>
+</html>

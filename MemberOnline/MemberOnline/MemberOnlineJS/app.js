@@ -3,7 +3,10 @@
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "Home/Index"
+            templateUrl: "Home/dashboard"
+        })
+        .when("/maps", {
+            templateUrl: "Maps/maps"
         })
         .otherwise({
             templateUrl: "Home/Index"
