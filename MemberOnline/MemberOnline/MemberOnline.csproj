@@ -159,6 +159,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,9 +228,6 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Scripts\devextreme-localization\dx.webappjs.de.js" />
     <Content Include="Scripts\devextreme-localization\dx.webappjs.ja.js" />
     <Content Include="Scripts\devextreme-localization\dx.webappjs.ru.js" />
@@ -2064,6 +2063,8 @@
     <Content Include="Templete\js\plugins\jquery\jquery-2.1.1.min.map" />
     <Content Include="Templete\js\plugins\tableexport\simple_html_dom.php" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
