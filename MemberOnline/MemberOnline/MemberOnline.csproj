@@ -161,6 +161,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1594,6 +1595,7 @@
     <Content Include="Templete\img\logo.png" />
     <Content Include="Templete\img\owl\AjaxLoader.gif" />
     <Content Include="Templete\img\owl\grabbing.png" />
+    <Content Include="Templete\img\register\logo_oishi.gif" />
     <Content Include="Templete\img\themes\black.jpg" />
     <Content Include="Templete\img\themes\blue.jpg" />
     <Content Include="Templete\img\themes\brown.jpg" />
@@ -2067,6 +2069,8 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Maps\maps.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\News\News.cshtml" />
+    <Content Include="Views\News\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
