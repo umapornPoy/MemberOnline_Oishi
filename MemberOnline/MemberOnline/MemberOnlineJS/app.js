@@ -8,6 +8,9 @@ app.config(function ($routeProvider) {
         .when("/maps", {
             templateUrl: "Maps/maps"
         })
+        .when("/feedback", {
+            templateUrl: "Home/feedback"
+        })
         .otherwise({
             templateUrl: "Home/Index"
         })

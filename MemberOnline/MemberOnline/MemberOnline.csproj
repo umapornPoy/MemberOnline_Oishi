@@ -2064,6 +2064,7 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Maps\maps.cshtml" />
     <Content Include="Views\Home\dashboard.cshtml" />
+    <Content Include="Views\Home\feedback.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
