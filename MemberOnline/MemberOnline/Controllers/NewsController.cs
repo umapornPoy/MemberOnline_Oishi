@@ -13,6 +13,11 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+        public ActionResult Unread()
+        {
+            return View();
+        }
+
         public ActionResult Detail()
         {
             return View();

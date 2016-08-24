@@ -1,207 +1,179 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- META SECTION -->
-    <title>Member</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+﻿<div class="panel panel-default">
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- END META SECTION -->
-    <!-- CSS INCLUDE -->
-    <link rel="stylesheet" type="text/css" id="theme" href="~/Templete/css/theme-default.css" />
-    <!-- EOF CSS INCLUDE -->
-</head>
-<body>
-    <div class="page-content-wrap">
-        <div class="row">
-            <div class="col-md-12">
-                <form class="form-horizontal">
 
-                    <div class="panel panel-default tabs">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active"><a href="#tab-first" role="tab" data-toggle="tab">Personal Data</a></li>
-                            <li><a href="#tab-second" role="tab" data-toggle="tab">Photo</a></li>
-                            <li><a href="#tab-third" role="tab" data-toggle="tab">Card Verify</a></li>
-                        </ul>
-                        
-                        <div class="panel-body tab-content">
-                            <div class="tab-pane active" id="tab-first">
-                                
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">User Name</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                            <input type="text" class="form-control" placeholder="Your login" />
+                <ul id="tabs">
+                    <li><a href="/#/Register" title="Edit Profile">Edit Profile</a></li>
+                    <li><a href="/#/Picture" title="Add Picture">Add Picture</a></li>
+                </ul>
 
-                                        </div>
-                                    </div>
+               
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">User Name</label>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                    <input type="text" class="form-control" placeholder="Your login" />
+
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Password</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                                            <input type="password" class="form-control" placeholder="Your password" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">First Name</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" class="form-control" value="" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Last Name</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" class="form-control" value="" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Gender</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <label class="check"><input type="checkbox" class="icheckbox" checked="checked" /> Male</label>
-                                        <label class="check"><input type="checkbox" class="icheckbox" /> Female</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Address</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <textarea class="form-control" rows="5"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">City</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <select class="form-control select">
-                                            <option>Bangkok</option>
-                                            <option>Chiang Mai</option>
-                                            <option>Krabi</option>
-                                            <option>Phuket</option>
-                                            <option>Ubon Ratchathani</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Zip code</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" class="form-control" value="" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Mobile Phone</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" class="form-control" value="" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">E-mail</label>
-                                    <div class="col-md-6 col-xs-12">
-                                        <input type="text" class="form-control" value="" placeholder="example@email.com" />
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-3 col-xs-12 control-label">Date of birth</label>
-                                    <div class="col-md-2">
-                                        <select class="form-control select">
-                                            <option selected="selected">01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <select class="form-control select">
-                                            <option selected="selected">01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <select class="form-control select">
-                                            <option selected="selected">1985</option>
-                                            <option>1986</option>
-                                            <option>1987</option>
-                                            <option>1988</option>
-                                            <option>1989</option>
-                                        </select>
-                                    </div>
-                                   </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">As component</label>
-                                        <div class="col-md-6 col-xs-12">
-                                            <div class="input-group date" id="dp-2" data-date="05-07-2014" data-date-format="dd-mm-yyyy">
-                                                <input type="text" class="form-control" value="05-07-2014" disabled="disabled" />
-                                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                
-                            </div>
-                            <div class="tab-pane" id="tab-second">
-                                <p>Fah</p>
                             </div>
                         </div>
 
-
-                        <div class="panel-footer">
-                            <button class="btn btn-default">Clear Form</button>
-                            <button class="btn btn-primary pull-right">Save Changes <span class="fa fa-floppy-o fa-right"></span></button>
-
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Password</label>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
+                                    <input type="password" class="form-control" placeholder="Your password" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                </form>
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">First Name</label>
+                            <div class="col-md-6 col-xs-12">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
 
-            </div>
-        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Last Name</label>
+                            <div class="col-md-6 col-xs-12">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
 
-    </div>
-    <!-- END PAGE CONTENT WRAPPER -->
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Gender</label>
+                            <div class="col-md-6 col-xs-12">
+                                <label class="check"><input type="checkbox" class="icheckbox" checked="checked" /> Male</label>
+                                <label class="check"><input type="checkbox" class="icheckbox" /> Female</label>
+                            </div>
+                        </div>
 
-    <!-- MESSAGE BOX-->
-    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
-        <div class="mb-container">
-            <div class="mb-middle">
-                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
-                <div class="mb-content">
-                    <p>Are you sure you want to log out?</p>
-                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Address</label>
+                            <div class="col-md-6 col-xs-12">
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">City</label>
+                            <div class="col-md-6 col-xs-12">
+                                <select class="form-control select">
+                                    <option>Bangkok</option>
+                                    <option>Chiang Mai</option>
+                                    <option>Krabi</option>
+                                    <option>Phuket</option>
+                                    <option>Ubon Ratchathani</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Zip code</label>
+                            <div class="col-md-6 col-xs-12">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Mobile Phone</label>
+                            <div class="col-md-6 col-xs-12">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">E-mail</label>
+                            <div class="col-md-6 col-xs-12">
+                                <input type="text" class="form-control" value="" placeholder="example@email.com" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">Date of birth</label>
+                            <div class="col-md-2">
+                                <select class="form-control select">
+                                    <option selected="selected">01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <select class="form-control select">
+                                    <option selected="selected">01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <select class="form-control select">
+                                    <option selected="selected">1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-12 control-label">As component</label>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="input-group date" id="dp-2" data-date="05-07-2014" data-date-format="dd-mm-yyyy">
+                                    <input type="text" class="form-control" value="05-07-2014" disabled="disabled" />
+                                    <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                   
+                   
+               
+                <div class="panel-footer">
+                    <button class="btn btn-default">Clear Form</button>
+                    <button class="btn btn-primary pull-right">Save Changes <span class="fa fa-floppy-o fa-right"></span></button>
                 </div>
-                <div class="mb-footer">
-                    <div class="pull-right">
-                        <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
-                        <button class="btn btn-default btn-lg mb-control-close">No</button>
-                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- END PAGE CONTENT WRAPPER -->
+<!-- MESSAGE BOX-->
+<div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+    <div class="mb-container">
+        <div class="mb-middle">
+            <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+            <div class="mb-content">
+                <p>Are you sure you want to log out?</p>
+                <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+            </div>
+            <div class="mb-footer">
+                <div class="pull-right">
+                    <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                    <button class="btn btn-default btn-lg mb-control-close">No</button>
                 </div>
             </div>
         </div>
     </div>
-
-</body>
-</html>
+</div>
 
 
+<script src="~/MemberOnlineJS/tabs.js"></script>
+<link href="~/Templete/css/tabs.css" rel="stylesheet" />
 
 
 
 
+
+       

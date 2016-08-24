@@ -6,11 +6,23 @@ app.config(function ($routeProvider) {
         .when("/", {
             templateUrl: "Home/dashboard"
         })
+        .when("/News", {
+            templateUrl: "News/News"
+        })
+        .when("/Unread", {
+            templateUrl: "News/Unread"
+        })
+        .when("/Detail", {
+            templateUrl: "News/Detail"
+        })
         .when("/maps", {
             templateUrl: "Maps/maps"
         })
-        .when("/register", {
+        .when("/Register", {
             templateUrl: "Register/Register"
+        })
+        .when("/Picture", {
+            templateUrl: "Register/Picture"
         })
         .otherwise({
             templateUrl: "Home/Index"
