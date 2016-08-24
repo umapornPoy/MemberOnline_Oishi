@@ -6,16 +6,22 @@ using System.Web.Mvc;
 
 namespace MemberOnline.Controllers
 {
-    public class RegisterController : Controller
+    public class NewsController : Controller
     {
-        // GET: Register
-        public ActionResult Register()
+        // GET: News
+        public ActionResult News()
         {
             return View();
         }
-        public ActionResult Picture()
+        public ActionResult Unread()
         {
             return View();
         }
+
+        public ActionResult Detail()
+        {
+            return View();
+        }
+
     }
 }

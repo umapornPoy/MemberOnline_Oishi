@@ -2,23 +2,27 @@
 
 app.config(function ($routeProvider) {
     $routeProvider
+
         .when("/", {
             templateUrl: "Home/dashboard"
+        })
+        .when("/News", {
+            templateUrl: "News/News"
+        })
+        .when("/Unread", {
+            templateUrl: "News/Unread"
+        })
+        .when("/Detail", {
+            templateUrl: "News/Detail"
         })
         .when("/maps", {
             templateUrl: "Maps/maps"
         })
-        .when("/feedback", {
-            templateUrl: "Home/feedback"
+        .when("/Register", {
+            templateUrl: "Register/Register"
         })
-        .when("/mapsByName", {
-            templateUrl: "Maps/mapsByName"
-        })
-        .when("/info", {
-            templateUrl: "Home/info"
-        })
-        .when("/showMap", {
-            templateUrl: "Home/showMap"
+        .when("/Picture", {
+            templateUrl: "Register/Picture"
         })
         .otherwise({
             templateUrl: "Home/Index"
