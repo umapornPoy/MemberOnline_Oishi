@@ -21,5 +21,13 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+        public ActionResult info()
+        {
+            return View();
+        }
+        public ActionResult showMap()
+        {
+            return View();
+        }
     }
 }

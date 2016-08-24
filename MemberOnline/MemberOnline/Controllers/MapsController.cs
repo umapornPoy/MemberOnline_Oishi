@@ -13,5 +13,10 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+
+        public ActionResult mapsByName()
+        {
+            return View();
+        }
     }
 }

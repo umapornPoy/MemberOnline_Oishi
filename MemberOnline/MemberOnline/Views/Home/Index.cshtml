@@ -13,7 +13,14 @@
     <link rel="stylesheet" type="text/css" id="theme" href="~/Templete/css/theme-default.css" />
     <!-- EOF CSS INCLUDE -->
     <link href="~/Content/dx.common.css" rel="stylesheet" />
+    <style>
+        #scrollArea {
+  height: 545px;
+  overflow: auto;
+}
+    </style>
 </head>
+
 <body>
     <!-- START PAGE CONTAINER -->
     <div class="page-container">
@@ -45,40 +52,35 @@
                     </div>
                 </li>
                 <li class="xn-title">Components</li>
-                <li>
-                    <a href="/#/maps"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
-                </li>
-                <li>
-                    <a href="/#/feedback"><span class="fa fa-map-marker"></span> <span class="xn-text">Feedback</span></a>
-                </li>
-                <li>
-                    <a href="#/register"><span class="fa fa-register-marker"></span> <span class="xn-text">Edit Member</span></a>
-                </li>
 
+                <li>
+                    <a href="/#/mapsByName"><span class="fa fa-register-marker"></span> <span class="xn-text">Edit Member</span></a>
+                </li>
 
                 <li class="xn-openable">
-                    <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Navigation Levels</span></a>
+                    <a href="/#/maps"><span class="fa fa-sitemap"></span> <span class="xn-text">Maps</span></a>
                     <ul>
-                        <li class="xn-openable">
-                            <a href="#">Second Level</a>
-                            <ul>
-                                <li class="xn-openable">
-                                    <a href="#">Third Level</a>
-                                    <ul>
-                                        <li class="xn-openable">
-                                            <a href="#">Fourth Level</a>
-                                            <ul>
-                                                <li><a href="#">Fifth Level</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                        <li>
+                            <a href="/#/maps">Sort by location</a>
+                                <li>
+                                    <a href="/#/mapsByName">Sort by Name</a>                                 
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+
+
+                <li>
+                    <a href="/#/feedback"><span class="fa fa-map-marker"></span> <span class="xn-text">Feedback</span></a>
                 </li>
 
-            </ul>
+                <li>
+                    <a href="/#/info"></a>
+                </li>
+                <li>
+                    <a href="/#/info"></a>
+                </li>
+
+            
             <!-- END X-NAVIGATION -->
         </div>
         <!-- END PAGE SIDEBAR -->

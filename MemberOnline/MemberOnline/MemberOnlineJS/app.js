@@ -11,6 +11,15 @@ app.config(function ($routeProvider) {
         .when("/feedback", {
             templateUrl: "Home/feedback"
         })
+        .when("/mapsByName", {
+            templateUrl: "Maps/mapsByName"
+        })
+        .when("/info", {
+            templateUrl: "Home/info"
+        })
+        .when("/showMap", {
+            templateUrl: "Home/showMap"
+        })
         .otherwise({
             templateUrl: "Home/Index"
         })

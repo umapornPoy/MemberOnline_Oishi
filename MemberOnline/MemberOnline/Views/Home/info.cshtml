@@ -1,0 +1,75 @@
+﻿
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<div class="page-title">
+    <h2><a href="/#/maps"><span class="fa fa-arrow-circle-o-left"></span>Back</a></h2>
+</div>
+
+<!-- START CONTENT FRAME BODY -->
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body padding-0">
+                <div class="row">
+                    <div class="timeline-item-content" style="width: 100%;">                      
+                        <div class="timeline-body" align="center">
+                            <br>
+                            <div class="timeline-heading">
+                                <h4 style="color:darkred"><strong>โออิชิแกรนด์ สยามพารากอน</strong></h4>
+                            </div>
+                            <br>
+                           
+                            <div class="w3-content w3-section" style="max-width:550px">
+                                <img class="mySlides w3-animate-bottom" src="~/Templete/img/oishi-grand.jpg" style="width:100%">
+                                <img class="mySlides w3-animate-bottom" src="~/Templete/img/oishigrand2.png" style="width:100%">
+                                <img class="mySlides w3-animate-bottom" src="~/Templete/img/oishigrandpr2015.jpg" style="width:100%">
+                            </div>
+                            <div class="paragraph">
+                                <br>
+                                <br>
+                                <h5 style="color:darkgreen"><strong>โออิชิ แกรนด์ "แกรนด์บุฟเฟ่ต์หรูแนวใหม่"</strong></h5>
+                                <br>
+                                <p>แกรนด์บุฟเฟ่ต์ ในราคาเบาๆ… เปิดประสบการณ์ความอร่อยกับหลากหลายเมนูคุณภาพคัดพิเศษ</p>
+                                <p>ระดับพรีเมี่ยม ที่ให้คุณเลือกอร่อยได้...แบบไม่จำกัด ทั้งอาหาร ญี่ปุ่น จีน ยุโรป กว่า 100 รายการ</p>
+                                <p> อาทิ ซาชิมิ ปลาฮามาจิ , ปลาหิมะย่างเกลือ , เทปันยากิ เนื้อนิวซีแลนด์ , ไอศกรีม ฮาเก้นดาส</p>
+                                <br><br>
+                                <h5><strong>ที่ตั้ง</strong></h5>
+                                <p>ศูนย์การค้าสยามพารากอน ถ.พระราม 1 แขวง ปทุมวัน เขต ปทุมวัน กรุงเทพฯ 10330</p>
+                            </div>
+                            <br><br>
+                                <h5><a href="/#/showMap"><strong>Show Map</strong></a></h5>
+                            </div>
+                        <br><br><br>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2500);
+}
+</script>
+
+<!-- END CONTENT FRAME BODY -->
