@@ -201,7 +201,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
-    <Content Include="Images\Register\card+add.png" />
+    <Content Include="Images\Register\Addcard.png" />
     <Content Include="Images\Register\Oishi-Premier-card.jpg" />
     <Content Include="MemberOnlineJS\app.js" />
     <Content Include="MemberOnlineJS\picture.js" />
@@ -2082,6 +2082,10 @@
     <Content Include="Views\News\Unread.cshtml" />
     <Content Include="Views\Register\Picture.cshtml" />
     <Content Include="Views\Register\Card.cshtml" />
+    <Content Include="Views\Home\dashboard.cshtml" />
+    <Content Include="Views\Home\feedback.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Home\showMap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
