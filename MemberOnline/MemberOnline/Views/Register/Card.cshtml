@@ -1,32 +1,34 @@
 ﻿
-<div class="login-container lightmode">
-
-    <div class="login-box animated fadeInDown">
-        <div class="login-body">
-            <form action="/#/Register" class="form-horizontal" method="post">
-                <div class="form-group" align="center">
-                    <div class="col-md-12">
-                        <img src="~/Images/Register/Oishi-card.jpg" />
-                    </div>
-                </div>
-                
-                <div class="form-group"  id="my_centered_buttons">
-                    <div class="col-md-6">
-                        <button class="btn btn-info btn-block">Add Card</button>
-                    </div>
-                </div>                          
+<script src="~/MemberOnlineJS/slideshow.js"></script>
+<script src="~/Templete/js/jquery.slideme2.js"></script>
+<link href="~/Templete/css/slideme.css" rel="stylesheet" />
+<div class="panel panel-default">
+    <style>
+        li.slideme {
+            max-width: 320px;
+            max-height: 250px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>  
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form action="/#/Register">
+                <input type="image" src="~/Images/Register/Addcard.png" alt="Submit" class="img-responsive" align:center>
             </form>
+
         </div>
-        <div class="login-footer">
-                      
+
+
+        <div id="foo">
+            <ul class="slideme">
+                <li><img src="~/Images/Register/Addcard.png"></li>
+                <li><img src="~/Images/Register/Addcard.png"></li>
+                <li><img src="~/Images/Register/Addcard.png" /></li>
+                <li><img src="~/Images/Register/Addcard.png" /></li>
+            </ul>
         </div>
+
     </div>
 </div>
-
-
-<style type="text/css">
-    #my_centered_buttons {
-        display: flex;
-        justify-content: center;
-    }
-</style>

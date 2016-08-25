@@ -201,9 +201,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Imges\News\News-Oishi-phuket-lobster.jpg" />
+    <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
+    <Content Include="Images\Register\Addcard.png" />
+    <Content Include="Images\Register\Oishi-Premier-card.jpg" />
+    <Content Include="Images\Register\user.png" />
+    <Content Include="Images\Register\user_profile.png" />
     <Content Include="MemberOnlineJS\app.js" />
     <Content Include="MemberOnlineJS\picture.js" />
+    <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
@@ -1514,6 +1519,7 @@
     <Content Include="Templete\css\mcustomscrollbar\jquery.mCustomScrollbar.css" />
     <Content Include="Templete\css\nvd3\nv.d3.css" />
     <Content Include="Templete\css\rickshaw\rickshaw.css" />
+    <Content Include="Templete\css\slideme.css" />
     <Content Include="Templete\css\summernote\summernote.css" />
     <Content Include="Templete\css\tabs.css" />
     <Content Include="Templete\css\theme-black.css" />
@@ -1627,6 +1633,7 @@
     <Content Include="Templete\js\demo_tables.js" />
     <Content Include="Templete\js\demo_tasks.js" />
     <Content Include="Templete\js\faq.js" />
+    <Content Include="Templete\js\jquery.slideme2.js" />
     <Content Include="Templete\js\plugins.js" />
     <Content Include="Templete\js\plugins\blueimp\jquery.blueimp-gallery.min.js" />
     <Content Include="Templete\js\plugins\bootstrap\bootstrap-colorpicker.js" />
@@ -2090,6 +2097,11 @@
     <Content Include="Views\News\Unread.cshtml" />
     <Content Include="Views\Register\Picture.cshtml" />
     <Content Include="Views\Register\Card.cshtml" />
+    <Content Include="Views\Home\dashboard.cshtml" />
+    <Content Include="Views\Home\feedback.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Home\showMap.cshtml" />
+    <Content Include="Views\Maps\mapsByName.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
