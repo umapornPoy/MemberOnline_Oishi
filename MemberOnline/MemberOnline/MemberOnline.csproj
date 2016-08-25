@@ -2108,6 +2108,7 @@
     <Content Include="Views\Home\showMap.cshtml" />
     <Content Include="Views\Maps\mapsByName.cshtml" />
     <Content Include="Views\Navigation\Navigation.cshtml" />
+    <Content Include="Views\Register\Point.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
