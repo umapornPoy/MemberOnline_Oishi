@@ -36,9 +36,14 @@ app.config(function ($routeProvider) {
         .when("/showMap", {
             templateUrl: "Home/showMap"
         })
-        .when("/Navigation", {
-            templateUrl: "Navigation/Navigation"
+
+        .when("/Card", {
+            templateUrl: "Register/Card"
         })
+         .when("/Point", {
+             templateUrl: "Register/Point"
+         })
+
         .otherwise({
             templateUrl: "Home/Index"
         })

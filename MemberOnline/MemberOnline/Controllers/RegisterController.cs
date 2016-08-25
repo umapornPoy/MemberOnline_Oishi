@@ -17,5 +17,9 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+        public ActionResult Card()
+        {
+            return View();
+        }
     }
 }
