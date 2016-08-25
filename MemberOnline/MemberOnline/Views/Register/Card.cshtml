@@ -1,10 +1,32 @@
-﻿<div class="panel panel-default">
-    <div class="row">
-        <div class="col-md-4">
-            <form action="/#/Register">
-                <input type="image" src="~/Images/Register/Addcard.png" alt="Submit" class="img-responsive" align:center>
+﻿
+<div class="login-container lightmode">
+
+    <div class="login-box animated fadeInDown">
+        <div class="login-body">
+            <form action="/#/Register" class="form-horizontal" method="post">
+                <div class="form-group" align="center">
+                    <div class="col-md-12">
+                        <img src="~/Images/Register/Oishi-card.jpg" />
+                    </div>
+                </div>
+                
+                <div class="form-group"  id="my_centered_buttons">
+                    <div class="col-md-6">
+                        <button class="btn btn-info btn-block">Add Card</button>
+                    </div>
+                </div>                          
             </form>
-          
-          </div>
+        </div>
+        <div class="login-footer">
+                      
+        </div>
     </div>
 </div>
+
+
+<style type="text/css">
+    #my_centered_buttons {
+        display: flex;
+        justify-content: center;
+    }
+</style>
