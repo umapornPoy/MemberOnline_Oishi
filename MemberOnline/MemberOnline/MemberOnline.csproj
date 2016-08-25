@@ -163,6 +163,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MapsController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1521,8 +1522,10 @@
     <Content Include="Templete\css\theme-default.css" />
     <Content Include="Templete\css\theme-white.css" />
     <Content Include="Templete\img\backgrounds\wall_1.jpg" />
+    <Content Include="Templete\img\bangcare.jpg" />
     <Content Include="Templete\img\bg-dot.png" />
     <Content Include="Templete\img\bg.png" />
+    <Content Include="Templete\img\bigc4.jpg" />
     <Content Include="Templete\img\blueimp\error.png" />
     <Content Include="Templete\img\blueimp\error.svg" />
     <Content Include="Templete\img\blueimp\loading.gif" />
@@ -1561,6 +1564,7 @@
     <Content Include="Templete\img\filetree\txt.png" />
     <Content Include="Templete\img\filetree\xls.png" />
     <Content Include="Templete\img\filetree\zip.png" />
+    <Content Include="Templete\img\food.png" />
     <Content Include="Templete\img\icheck\grey%402x.png" />
     <Content Include="Templete\img\icheck\grey.png" />
     <Content Include="Templete\img\icons\csv.png" />
@@ -1599,9 +1603,15 @@
     <Content Include="Templete\img\logo-small-grey.png" />
     <Content Include="Templete\img\logo-small.png" />
     <Content Include="Templete\img\logo.png" />
+    <Content Include="Templete\img\oichi.jpg" />
+    <Content Include="Templete\img\oishi-grand.jpg" />
+    <Content Include="Templete\img\oishigrand2.png" />
+    <Content Include="Templete\img\oishigrandpr2015.jpg" />
     <Content Include="Templete\img\owl\AjaxLoader.gif" />
     <Content Include="Templete\img\owl\grabbing.png" />
+    <Content Include="Templete\img\pin.jpg" />
     <Content Include="Templete\img\register\logo_oishi.gif" />
+    <Content Include="Templete\img\square.jpg" />
     <Content Include="Templete\img\themes\black.jpg" />
     <Content Include="Templete\img\themes\blue.jpg" />
     <Content Include="Templete\img\themes\brown.jpg" />
@@ -2079,6 +2089,12 @@
     <Content Include="Views\News\Detail.cshtml" />
     <Content Include="Views\News\Unread.cshtml" />
     <Content Include="Views\Register\Picture.cshtml" />
+    <Content Include="Views\Home\dashboard.cshtml" />
+    <Content Include="Views\Home\feedback.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Home\showMap.cshtml" />
+    <Content Include="Views\Navigation\Navigation.cshtml" />
+    <Content Include="Views\Maps\mapsByName.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
