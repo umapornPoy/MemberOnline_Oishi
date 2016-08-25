@@ -201,6 +201,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\index\profile.png" />
+    <Content Include="Images\index\profile2.jpg" />
+    <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
+    <Content Include="Images\Register\card+add.png" />
+    <Content Include="Images\Register\Oishi-Premier-card.jpg" />
     <Content Include="Imges\News\News-Oishi-phuket-lobster.jpg" />
     <Content Include="MemberOnlineJS\app.js" />
     <Content Include="MemberOnlineJS\picture.js" />
