@@ -6,9 +6,6 @@ app.config(function ($routeProvider) {
         .when("/", {
             templateUrl: "Home/dashboard"
         })
-         .when("/Login", {
-             templateUrl: "Login/Login"
-         })
         .when("/News", {
             templateUrl: "News/News"
         })
