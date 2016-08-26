@@ -1484,6 +1484,7 @@
     <Content Include="Templete\css\animate\animate.min.css" />
     <Content Include="Templete\css\blueimp\blueimp-gallery.min.css" />
     <Content Include="Templete\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Templete\css\card.css" />
     <Content Include="Templete\css\codemirror\codemirror.css" />
     <Content Include="Templete\css\codemirror\theme\3024-day.css" />
     <Content Include="Templete\css\codemirror\theme\3024-night.css" />
@@ -1521,6 +1522,9 @@
     <Content Include="Templete\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Templete\css\fullcalendar\fullcalendar.css" />
     <Content Include="Templete\css\jquery\jquery-ui.min.css" />
+    <Content Include="Templete\css\jquery\jquery.mobile-1.4.5.min.css" />
+    <Content Include="Templete\js\plugins\jquery\card.js" />
+    <Content Include="Templete\js\plugins\jquery\jquery.mobile-1.4.5.min.js" />
     <Content Include="Templete\css\mcustomscrollbar\jquery.mCustomScrollbar.css" />
     <Content Include="Templete\css\nvd3\nv.d3.css" />
     <Content Include="Templete\css\rickshaw\rickshaw.css" />
