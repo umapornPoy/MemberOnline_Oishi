@@ -1,60 +1,84 @@
-﻿<div class="wrapper">
-    <div class="panel-heading">
-        <h1 class="panel-title" style="color:darkred"><strong>Card Member</strong></h1>
-    </div>
+﻿<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="panel-heading">
+    <h1 class="panel-title"><strong>Card Member</strong></h1>
+</div>
+<div class="panel panel-default">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="timeline-body" align="center">
+                <div class="w3-content" style="max-width:800px; position:relative">
+
+                    <img id="flip" class="mySlides w3-animate-left" src="~/Templete/img/oishi-grand.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-left" src="~/Templete/img/oishigrand2.png" style="width:100%">
+                    <img class="mySlides w3-animate-left" src="~/Templete/img/oishigrandpr2015.jpg" style="width:100%">
 
 
-    <div class="login-box animated fadeInDown">
-        <!-- <div class="image" align="center">
-            <img src="~/Images/Register/logo1.png" />
-        </div>  -->
-        <br>
-        <div class="login-body">
-
-            <div class="form-group" align="center">
-                <div class="col-md-12">
-                    <img src="~/Images/Register/Oishi-card.jpg" />
+                    <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><h1>❮</h1></a>
+                    <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><h1>❯</h1></a>
                 </div>
-            </div>
-            <div>
-                <h1 class="login-container lightmod"></h1>
-            </div>
-
-            <div class="form-group" align="center">
-                <button id="popup" onclick="div_show()"> <h3><span class="fa fa-plus"><strong>  ADD YOUR CARD</strong></span></h3></button>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="abc">
-    <!-- Popup Div Starts Here -->
-    <div id="popupContact">
-        <!-- Contact Us Form -->
-        <form action="#" id="form" method="post" name="form" class="resp">
-            <a class="close" onclick="div_hide()" align="right">X</a>
-            <h2>Confirm Card</h2>
-            <div class="input-group">
-                <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
-                <input type="text" class="form-control" value="" placeholder="Card Number">
             </div><br>
-
-            <div class="input-group">
-                <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                <input type="Password" class="form-control" value="" placeholder="Pin Code">
-            </div><br>
-
-            <div class="input-group" align="center">
-                <button onclick="parent.location='#/News'" class="btn btn-primary btn-lg btn-block">Confirm</button>
-              
-            </div>
-        </form>
-        <div class="footer">
-
         </div>
-    </div>
-</div>
-
-
-<script src="~/Templete/js/plugins/jquery/card.js"></script>
-<link href="~/Templete/css/card.css" rel="stylesheet" />
+                <div class="form-group" align="center">
+                    <button id="popup" class="btn btn-info" onclick="div_show()"> <h3><span class="fa fa-plus"><strong>  ADD YOUR CARD</strong></span></h3></button>
+                </div>
+         
         
+    </div>
+</div>
+<div class="mb-footer">
+    <h1></h1>
+</div>
+
+
+    <!--function popup-->
+    <div id="abc">
+        <!-- Popup Div Starts Here -->
+        <div id="popupContact">
+            <!-- Contact Us Form -->
+            <form action="#" id="form" method="post" name="form" class="resp">
+                <a class="close" onclick="div_hide()" align="right">X</a>
+                <h2>Confirm Card</h2>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                    <input name="card" type="text" class="form-control" value="" placeholder="Card Number">
+                </div><br>
+
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
+                    <input name="password" type="Password" class="form-control" value="" placeholder="Pin Code">
+                </div><br>
+
+                <div class="input-group">
+                    <button onclick="parent.location='#/News'" class="btn btn-info btn-lg ">Confirm</button>
+
+                </div>
+
+            </form>
+            <div class="footer">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Templete/js/plugins/jquery/card.js"></script>
+    <link href="~/Templete/css/card.css" rel="stylesheet">

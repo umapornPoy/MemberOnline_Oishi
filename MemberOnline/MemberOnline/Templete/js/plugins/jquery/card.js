@@ -1,6 +1,6 @@
 ﻿
 function check_empty() {
-if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+    if (document.getElementById('card').value == "" || document.getElementById('password').value == "") {
 alert("Fill All Fields !");
 } else {
 document.getElementById('form').submit();
