@@ -206,6 +206,10 @@
     <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
     <Content Include="Images\Register\add.png" />
     <Content Include="Images\Register\Addcard.png" />
+    <Content Include="Images\Register\card-plus.png" />
+    <Content Include="Images\Register\card.png" />
+    <Content Include="Images\Register\card2.png" />
+    <Content Include="Images\Register\card3.png" />
     <Content Include="Images\Register\logo1.png" />
     <Content Include="Images\Register\Oishi-card.jpg" />
     <Content Include="Images\Register\Oishi-card2.jpg" />

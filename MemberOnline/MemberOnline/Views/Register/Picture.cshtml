@@ -45,7 +45,7 @@ function showDivs(n) {
 </style>
 
 <style>
-        #panel, #flip {
+        #panel {
             padding: 5px;
             text-align: center;
             background-color: #CFEED9;
@@ -68,18 +68,14 @@ function showDivs(n) {
         <div class="row">
             <div class="col-md-12">
                 <div class="timeline-body" align="center">
-                    <div class="w3-content" style="max-width:800px; position:relative">
-
-                        <img id="flip" class="mySlides w3-animate-left" src="~/Templete/img/oishi-grand.jpg" style="width:100%">
-                        <img class="mySlides w3-animate-left" src="~/Templete/img/oishigrand2.png" style="width:100%">
-                        <img class="mySlides w3-animate-left" src="~/Templete/img/oishigrandpr2015.jpg" style="width:100%">
-
-
+                    <div class="w3-content" style="max-width:800px; position:relative">  
+                        <img onclick="parent.location='#/Point'" class="mySlides w3-animate-left" src="~/Images/Register/card.png" style="width:100%">
+                        <img  id="flip" class="mySlides w3-animate-left" src="~/Images/Register/card-plus.png" style="width:100%">
                         <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><h1>❮</h1></a>
                         <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><h1>❯</h1></a>
 
                     </div>
-                </div><br>
+                </div>
 
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -107,5 +103,5 @@ function showDivs(n) {
 <div class="mb-footer">
     <h1></h1> 
 </div>
-
+<link href="~/Templete/css/popup.css" rel="stylesheet" />
 
