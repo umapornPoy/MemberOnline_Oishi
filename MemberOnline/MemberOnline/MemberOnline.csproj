@@ -201,6 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\card\bg_img2.jpg" />
     <Content Include="Images\index\profile.png" />
     <Content Include="Images\index\profile2.jpg" />
     <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
