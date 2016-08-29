@@ -217,6 +217,7 @@
     <Content Include="Images\Register\Oishi-card2.jpg" />
     <Content Include="Images\Register\user.png" />
     <Content Include="Images\Register\user_profile.png" />
+    <Content Include="Images\Register\user_sm.png" />
     <Content Include="MemberOnlineJS\app.js" />
     <Content Include="MemberOnlineJS\index.js" />
     <Content Include="MemberOnlineJS\picture.js" />
