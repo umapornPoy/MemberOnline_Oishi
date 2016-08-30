@@ -202,6 +202,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\card\bg_img2.jpg" />
+    <Content Include="Images\card\cards-barcode.png" />
     <Content Include="Images\feedback\bg_img_feedback.jpg" />
     <Content Include="Images\index\profile.png" />
     <Content Include="Images\index\profile2.jpg" />
@@ -1044,6 +1045,8 @@
     <Content Include="Content\icons\dxicons.woff" />
     <Content Include="Content\icons\dxicons.ttf" />
     <Content Include="Content\icons\dxicons.eot" />
+    <Content Include="Templete\js\jquery.flip.js" />
+    <Content Include="Templete\js\jquery.flip.min.js" />
     <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
