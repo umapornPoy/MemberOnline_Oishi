@@ -219,7 +219,9 @@
     <Content Include="Images\Register\user_profile.png" />
     <Content Include="Images\Register\user_sm.png" />
     <Content Include="MemberOnlineJS\app.js" />
+    <Content Include="MemberOnlineJS\card.js" />
     <Content Include="MemberOnlineJS\index.js" />
+    <Content Include="MemberOnlineJS\js.js" />
     <Content Include="MemberOnlineJS\picture.js" />
     <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />
@@ -1044,7 +1046,9 @@
     <Content Include="Content\icons\dxicons.woff" />
     <Content Include="Content\icons\dxicons.ttf" />
     <Content Include="Content\icons\dxicons.eot" />
+    <Content Include="Templete\card.css" />
     <Content Include="Web.config" />
+    <Content Include="Templete\css\card.sass" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
