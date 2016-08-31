@@ -18,8 +18,8 @@ app.config(function ($routeProvider) {
         .when("/maps", {
             templateUrl: "Maps/maps"
         })
-        .when("/Register", {
-            templateUrl: "Register/Register"
+        .when("/Editmember", {
+            templateUrl: "Register/Editmember"
         })
         .when("/Picture", {
             templateUrl: "Register/Picture"

@@ -25,5 +25,10 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+        public ActionResult Editmember()
+        {
+            return View();
+        }
+
     }
 }

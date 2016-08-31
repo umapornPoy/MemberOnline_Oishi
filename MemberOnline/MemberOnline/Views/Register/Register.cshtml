@@ -1,168 +1,197 @@
-﻿<div class="panel panel-default">
-    <div class="row">
-        <div class="col-md-12">
-            <form class="form-horizontal">
-                <br>
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">User Name</label>
-                    <div class="col-md-6 col-xs-8">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                            <input type="text" class="form-control" placeholder="Your login" />
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="MemberOnline">
+<head>
+    <!-- META SECTION -->
+    <title>Oishi Member Online</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- END META SECTION -->
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="~/Templete/css/theme-default.css" />
+    <!-- EOF CSS INCLUDE -->
+    <link href="~/Content/dx.common.css" rel="stylesheet" />
+    <style>
+        #scrollArea {
+            height: 545px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title" align="text-center">Register</h3>
+                </div>
+
+                <form class="form-horizontal">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">User Name</label>
+                            <div class="col-md-6 col-xs-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                    <input type="text" class="form-control" placeholder="Your login" />
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Password</label>
+                            <div class="col-md-6 col-xs-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
+                                    <input type="password" class="form-control" placeholder="Your password" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Confirm </label>
+                            <div class="col-md-6 col-xs-8">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
+                                    <input type="password" class="form-control" placeholder="Your password" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">First Name</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Last Name</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Gender</label>
+                            <div class="col-md-6 col-xs-8">
+                                <label class="check">
+                                    <input type="radio" name="gender" value="0" class="icheckbox" /> Male
+                                </label>
+                                <label class="check">
+                                    <input type="radio" name="gender" value="1" class="icheckbox" /> Female
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Address</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">City</label>
+                            <div class="col-md-6 col-xs-8">
+                                <select class="form-control select">
+                                    <option>Bangkok</option>
+                                    <option>Chiang Mai</option>
+                                    <option>Krabi</option>
+                                    <option>Phuket</option>
+                                    <option>Ubon Ratchathani</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Zip code</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="number" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Mobile Phone</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">E-mail</label>
+                            <div class="col-md-6 col-xs-8">
+                                <input type="text" class="form-control" value="" placeholder="example@email.com" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-3 control-label">Birthday</label>
+                            <div class="col-md-2 col-xs-3">
+                                <select class="form-control select">
+                                    <option selected="selected">01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 col-xs-3">
+                                <select class="form-control select">
+                                    <option selected="selected">01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 col-xs-3">
+                                <select class="form-control select">
+                                    <option selected="selected">1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 col-xs-4 control-label">Your Picture</label>
+                            <div class="col-md-6 col-xs-8">
+                                <div class="input-group">
+
+                                    <br>
+                                    <img id="blah" src="~/Images/Register/user_sm.png" class="img-circle img-responsive" style="width:50%">
+                                    <br><br>
+                                    <input type='file' class="align:center" onchange="readURL(this);">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Password</label>
-                    <div class="col-md-6 col-xs-8">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                            <input type="password" class="form-control" placeholder="Your password" />
-                        </div>
+
+                    <div class="panel-footer">
+                        <a href="/Login/Login" class="btn btn-success pull-right"><span class="fa fa-floppy-o"></span> Save Changes</a>
                     </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Confirm </label>
-                    <div class="col-md-6 col-xs-8">
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                            <input type="password" class="form-control" placeholder="Your password" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">First Name</label>
-                    <div class="col-md-6 col-xs-8">
-                         <input type="text" class="form-control" value="" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Last Name</label>
-                    <div class="col-md-6 col-xs-8">
-                        <input type="text" class="form-control" value="" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Gender</label>
-                    <div class="col-md-6 col-xs-8">
-                        <label class="check">
-                            <input type="radio" name="gender" value="0" class="icheckbox" /> Male
-                        </label>
-                        <label class="check">
-                            <input type="radio" name="gender" value="1" class="icheckbox" /> Female
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Address</label>
-                    <div class="col-md-6 col-xs-8">
-                        <input type="text" class="form-control" value="" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">City</label>
-                    <div class="col-md-6 col-xs-8">
-                        <select class="form-control select">
-                            <option>Bangkok</option>
-                            <option>Chiang Mai</option>
-                            <option>Krabi</option>
-                            <option>Phuket</option>
-                            <option>Ubon Ratchathani</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Zip code</label>
-                    <div class="col-md-6 col-xs-8">
-                        <input type="number" class="form-control" value="" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Mobile Phone</label>
-                    <div class="col-md-6 col-xs-8">
-                        <input type="text" class="form-control" value="" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">E-mail</label>
-                    <div class="col-md-6 col-xs-8">
-                        <input type="text" class="form-control" value="" placeholder="example@email.com" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-3 control-label">Birthday</label>
-                    <div class="col-md-2 col-xs-3">
-                        <select class="form-control select">
-                            <option selected="selected">01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2 col-xs-3">
-                        <select class="form-control select">
-                            <option selected="selected">01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2 col-xs-3">
-                        <select class="form-control select">
-                            <option selected="selected">1985</option>
-                            <option>1986</option>
-                            <option>1987</option>
-                            <option>1988</option>
-                            <option>1989</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="col-md-3 col-xs-4 control-label">Your Picture</label>
-                    <div class="col-md-6 col-xs-8">
-                        <div class="input-group">
-
-                            <br>
-                            <img id="blah" src="~/Images/Register/user_sm.png" class="img-circle img-responsive" style="width:50%">
-                            <br><br>
-                            <input type='file' class="align:center" onchange="readURL(this);">
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="panel-footer">  
-                    <a href="/Login/Login" class="btn btn-success pull-right"><span class="fa fa-floppy-o"></span> Save Changes</a>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-
-
-
-<script src="~/MemberOnlineJS/tabs.js"></script>
-<link href="~/Templete/css/tabs.css" rel="stylesheet" />
-<script src="~/MemberOnlineJS/picture.js"></script>
-
-
-
-
        
+</body>
+</html>
+
+
+    <script src="~/MemberOnlineJS/tabs.js"></script>
+    <link href="~/Templete/css/tabs.css" rel="stylesheet" />
+    <script src="~/MemberOnlineJS/picture.js"></script>
+
+
+
+

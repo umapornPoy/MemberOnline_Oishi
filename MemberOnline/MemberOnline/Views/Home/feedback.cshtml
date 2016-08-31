@@ -11,42 +11,63 @@
         <h1 class="panel-title" style="color:white"><strong>Feedback</strong></h1>
     </div>
 
-        <div class="panel panel-default bg">
-            <div class="panel-body mail" align:center>
-                <div class="mail-item mail-unread mail-success">
-                    <div class="panel-heading">
-                        <h5 class="panel-title">สาขาที่ใช้บริการ</h5>
+    <div class="panel panel-default bg">
+        <div class="panel-body mail" align:center>
+            <div class="mail-item mail-unread mail-success">
+                <div class="panel-heading">
+                    <h5 class="panel-title" style="color:cadetblue">สาขาที่ใช้บริการ</h5>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group">
+                        <br>
+                        <h5 class="col-md-1 col-xs-3  text-left" style="padding-top:7px;"><strong>สาขา</strong></h5>
+                        <br>
+                        <div class="col-md-2 col-xs-9 ">
+                            <select class="form-control select" style="align-content:center">^
+                                <option>เลือกสาขา</option> 
+                                <option>โออิชิแกรนด์ สยามพารากอน</option>
+                                <option>โออิชิบุฟเฟ่ต์ ซีคอนสแควร์</option>
+                                <option>โออิชิบุฟเฟ่ต์ ซีคอนบางแค</option>
+                                <option>โออิชิบุฟเฟ่ต์ ปิ่นเกล้า</option>
+                                <option>โออิชิบุฟเฟ่ต์ บิ๊กซีพระราม4</option>
+                            </select>
+                        </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="form-group">
-                            <br>
-                            <h5 class="col-md-2  text-center" style="padding-top:7px;"><strong>สาขา</strong></h5>
-                            <br>
-                            <div class="col-md-3">
-                                <select class="form-control select" style="align-content:center">
-                                    <option>โออิชิแกรนด์ สยามพารากอน</option>
-                                    <option>โออิชิบุฟเฟ่ต์ ซีคอนสแควร์</option>
-                                    <option>โออิชิบุฟเฟ่ต์ ซีคอนบางแค</option>
-                                    <option>โออิชิบุฟเฟ่ต์ ปิ่นเกล้า</option>
-                                    <option>โออิชิบุฟเฟ่ต์ บิ๊กซีพระราม4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="panel-heading">
-                            <h5 class="panel-title">คุณภาพ</h5>
-                        </div>
+                    <div class="panel-heading">
+                        <h5 class="panel-title" style="color:cadetblue;">คุณภาพ</h5>
                     </div>
+                </div>
 
 
-                    <div class="mail-item mail-success">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-12">
+                <div class="mail-item mail-success">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6>
+                                รสชาติอาหาร
+                            </h6>
+                            <div class="stars">
+                                <form action="">
+                                    <input class="star star-5" id="star-5" type="checkbox" name="star" />
+                                    <label class="star star-5" for="star-5"></label>
+                                    <input class="star star-4" id="star-4" type="checkbox" name="star" />
+                                    <label class="star star-4" for="star-4"></label>
+                                    <input class="star star-3" id="star-3" type="checkbox" name="star" />
+                                    <label class="star star-3" for="star-3"></label>
+                                    <input class="star star-2" id="star-2" type="checkbox" name="star" />
+                                    <label class="star star-2" for="star-2"></label>
+                                    <input class="star star-1" id="star-1" type="checkbox" name="star" />
+                                    <label class="star star-1" for="star-1"></label>
+                                </form>
+                            </div>
+                            <br>
+                            <div>
                                 <h6>
-                                    รสชาติอาหาร
+                                    ความหลากหลายของอาหาร
                                 </h6>
+
                                 <div class="stars">
                                     <form action="">
                                         <input class="star star-5" id="star-5" type="radio" name="star" />
@@ -57,16 +78,15 @@
                                         <label class="star star-3" for="star-3"></label>
                                         <input class="star star-2" id="star-2" type="radio" name="star" />
                                         <label class="star star-2" for="star-2"></label>
-                                        <input class="star star-1" id="star-1" type="radio" name="star" />
+                                        <input class="star star-1" id="star-1" type="radio" name="star1" />
                                         <label class="star star-1" for="star-1"></label>
                                     </form>
                                 </div>
                                 <br>
                                 <div>
                                     <h6>
-                                        ความหลากหลายของอาหาร
+                                        ความสดของอาหาร
                                     </h6>
-
                                     <div class="stars">
                                         <form action="">
                                             <input class="star star-5" id="star-5" type="radio" name="star" />
@@ -84,7 +104,7 @@
                                     <br>
                                     <div>
                                         <h6>
-                                            ความสดของอาหาร
+                                            คุ้มค่าราคา
                                         </h6>
                                         <div class="stars">
                                             <form action="">
@@ -100,51 +120,32 @@
                                                 <label class="star star-1" for="star-1"></label>
                                             </form>
                                         </div>
-                                        <br>
-                                        <div>
-                                            <h6>
-                                                คุ้มค่าราคา
-                                            </h6>
-                                            <div class="stars">
-                                                <form action="">
-                                                    <input class="star star-5" id="star-5" type="radio" name="star" />
-                                                    <label class="star star-5" for="star-5"></label>
-                                                    <input class="star star-4" id="star-4" type="radio" name="star" />
-                                                    <label class="star star-4" for="star-4"></label>
-                                                    <input class="star star-3" id="star-3" type="radio" name="star" />
-                                                    <label class="star star-3" for="star-3"></label>
-                                                    <input class="star star-2" id="star-2" type="radio" name="star" />
-                                                    <label class="star star-2" for="star-2"></label>
-                                                    <input class="star star-1" id="star-1" type="radio" name="star" />
-                                                    <label class="star star-1" for="star-1"></label>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h6>
-                                                หน้าตาและสีสันของอาหาร
-                                            </h6>
-                                            <div class="stars">
-                                                <form action="">
-                                                    <input class="star star-5" id="star-5" type="radio" name="star" />
-                                                    <label class="star star-5" for="star-5"></label>
-                                                    <input class="star star-4" id="star-4" type="radio" name="star" />
-                                                    <label class="star star-4" for="star-4"></label>
-                                                    <input class="star star-3" id="star-3" type="radio" name="star" />
-                                                    <label class="star star-3" for="star-3"></label>
-                                                    <input class="star star-2" id="star-2" type="radio" name="star" />
-                                                    <label class="star star-2" for="star-2"></label>
-                                                    <input class="star star-1" id="star-1" type="radio" name="star" />
-                                                    <label class="star star-1" for="star-1"></label>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <br>
-
-                                        <div class="col-md-6">
-                                            <button class="btn btn-success" onclick="parent.location='/#/News'"><strong>Send</strong></button>
+                                    </div>
+                                    <div>
+                                        <h6>
+                                            หน้าตาและสีสันของอาหาร
+                                        </h6>
+                                        <div class="stars">
+                                            <form action="">
+                                                <input class="star star-5" id="star-5" type="radio" name="star" />
+                                                <label class="star star-5" for="star-5"></label>
+                                                <input class="star star-4" id="star-4" type="radio" name="star" />
+                                                <label class="star star-4" for="star-4"></label>
+                                                <input class="star star-3" id="star-3" type="radio" name="star" />
+                                                <label class="star star-3" for="star-3"></label>
+                                                <input class="star star-2" id="star-2" type="radio" name="star" />
+                                                <label class="star star-2" for="star-2"></label>
+                                                <input class="star star-1" id="star-1" type="radio" name="star" />
+                                                <label class="star star-1" for="star-1"></label>
+                                            </form>
                                         </div>
                                     </div>
+                                    <br>
+
+                                    <div class="col-md-6">
+                                        <button class="btn btn-success" onclick="parent.location='/#/News'"><strong>Send</strong></button>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -153,6 +154,7 @@
             </div>
         </div>
     </div>
+</div>
 
                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 

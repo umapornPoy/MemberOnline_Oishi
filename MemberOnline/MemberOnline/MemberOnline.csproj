@@ -197,6 +197,8 @@
     <Content Include="Content\layouts\Popup\PopupLayout.css" />
     <Content Include="Content\layouts\Popup\PopupLayout.html" />
     <Content Include="Content\layouts\Popup\PopupLayout.js" />
+    <Content Include="Content\layouts\star.css" />
+    <Content Include="Content\layouts\tabs.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1048,9 +1050,11 @@
     <Content Include="Content\icons\dxicons.woff" />
     <Content Include="Content\icons\dxicons.ttf" />
     <Content Include="Content\icons\dxicons.eot" />
+    <Content Include="Templete\card.css" />
     <Content Include="Templete\js\jquery.flip.js" />
     <Content Include="Templete\js\jquery.flip.min.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Register\Editmember.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
