@@ -220,7 +220,9 @@
     <Content Include="Images\Register\user_profile.png" />
     <Content Include="Images\Register\user_sm.png" />
     <Content Include="MemberOnlineJS\app.js" />
+    <Content Include="MemberOnlineJS\card.js" />
     <Content Include="MemberOnlineJS\index.js" />
+    <Content Include="MemberOnlineJS\js.js" />
     <Content Include="MemberOnlineJS\picture.js" />
     <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />
