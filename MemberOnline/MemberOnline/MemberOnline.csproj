@@ -209,6 +209,7 @@
     <Content Include="Images\News\News-Oishi-phuket-lobster.jpg" />
     <Content Include="Images\Register\add.png" />
     <Content Include="Images\Register\Addcard.png" />
+    <Content Include="Images\Register\card-500.png" />
     <Content Include="Images\Register\card-plus.png" />
     <Content Include="Images\Register\card.png" />
     <Content Include="Images\Register\card2.png" />
@@ -220,7 +221,9 @@
     <Content Include="Images\Register\user_profile.png" />
     <Content Include="Images\Register\user_sm.png" />
     <Content Include="MemberOnlineJS\app.js" />
+    <Content Include="MemberOnlineJS\card.js" />
     <Content Include="MemberOnlineJS\index.js" />
+    <Content Include="MemberOnlineJS\js.js" />
     <Content Include="MemberOnlineJS\picture.js" />
     <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />
