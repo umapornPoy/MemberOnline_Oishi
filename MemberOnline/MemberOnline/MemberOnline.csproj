@@ -220,6 +220,7 @@
     <Content Include="Images\Register\logo1.png" />
     <Content Include="Images\Register\Oishi-card.jpg" />
     <Content Include="Images\Register\Oishi-card2.jpg" />
+    <Content Include="Images\Register\oishi-card2.png" />
     <Content Include="Images\Register\user.png" />
     <Content Include="Images\Register\user_profile.png" />
     <Content Include="Images\Register\user_sm.png" />
