@@ -1,107 +1,61 @@
-﻿<script src="~/Templete/js/plugins/jquery/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flipButton").click(function(){
-        $("#panel").slideToggle("slow");
-    });
-});
-</script>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-
-<style>
-    .bg {
-        background-image: url('../../Images/card/bg_img2.jpg');
+﻿<style>
+    #top-header {
+        position:absolute;
+        left: 0%;
+        top: 0%;
+        right:0%;
+        
     }
+
+    #searchbox {
+        position:absolute;
+        display:inline-block;
+        z-index: 10;
+    }
+   
+
+
 </style>
 
+  
 
-<style>
-        #panel {
-            padding: 5px;
-            text-align: center;
-            background-color: #CFEED9;
-            border: solid 1px #070404;
-        }
 
-        #panel {
-            padding: 50px;
-            display: none;
-        }
-</style>
+    <div class="login-container lightmode">
+    <div class="login-box animated fadeInDown">
+        <br><br>
 
- <!-- start body-->  
 
-<div class="bg">
-    <div class="panel-heading">
-        <h2 style="color:white"><strong>Card Member</strong></h2>
-    </div>
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <img id="top-header" src="~/Images/card/cards-barcode.png" class="img-responsive">
 
-    <div class="panel panel-default bg">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="timeline-body" align="center">
-                    <div class="w3-content" style="max-width:600px; position:relative">
+                    <form id="searchbox" method="get">
+                       
+                            <input type="number" id="inputNumber" class="form-control" placeholder="Card Number" required autofocus>
                      
-                           <img id="flip" class="mySlides w3-animate-left" src="~/Images/Register/card-plus.png" style="width:100%">
-                            <img onclick="parent.location='#/Point'" class="mySlides w3-animate-left" src="~/Images/Register/card.png" style="width:100%">
-                      
-                            <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><h1>❮</h1></a>
-                            <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"><h1>❯</h1></a>
+                     
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Pin Number" required>
+                       
+                       
+                            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" onclick="parent.location='/#/Point'"><strong>Submit</strong></button>
                         
-                        </div>
-                </div>
 
-                <div class="col-md-3"></div>
-                <div class="col-md-7">
-                    <div class="w3-content" style="max-width:530px; position:relative">
-                        <!--<div id="flipButton" class="btn btn-info btn-block btn-lg"><span class="fa fa-plus"></span> Add Card</div>-->
-                        <div id="panel">
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
-                                <input type="text" class="form-control" value="" placeholder="Card Number">
-                            </div><br>
+                        <!-- <span id="reauth-email" class="reauth-email"></span>-->
 
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
-                                <input type="Password" class="form-control" value="" placeholder="Pin Code">
-                            </div><br>
-                            <div class="input-group">
-                                <button onclick="parent.location='/Login/Login'" class="btn btn-primary btn-lg btn-block">Confirm</button>
-                            </div>
-                        </div>
-                    </div>
+                    </form><!-- /form -->
+
+
                 </div>
-            </div>
         </div>
+
     </div>
-<div class="mb-footer">
-    <h1></h1> 
-</div>
-</div>
+</div> 
+
+        
+  
 
 
+  
+    <link rel="stylesheet" type="text/css" id="theme" href="~/Templete/css/theme-default.css" />
