@@ -1,7 +1,7 @@
 ﻿
 <style>
     .bg {
-        background-image: url('../../Images/feedback/bg_img_feedback.jpg');
+        background-color:white;
     }
 </style>
 
@@ -14,18 +14,19 @@
     <div class="panel panel-default bg">
         <div class="panel-body mail" align:center>
             <div class="mail-item mail-unread mail-success">
-                <div class="panel-heading">
-                    <h5 style="color:lightseagreen"><strong>สาขาที่ใช้บริการ</strong></h5>
+                <div class="">
+                    <h5 class="panel-title" style="color:lightseagreen"><strong>สาขาที่ใช้บริการ</strong></h5>
                 </div>
                 <br>
                 <div class="row">
                     <div class="form-group">
                         <br>
                         <h5 class="col-md-1 col-xs-3  text-left" style="padding-top:7px;"><strong>สาขา</strong></h5>
-                        <br>
+
                         <div class="col-md-2 col-xs-9 ">
-                            <select class="form-control select" style="align-content:center">^
-                                <option>เลือกสาขา</option> 
+                            <select class="form-control select" style="align-content:center">
+                                ^
+                                <option>เลือกสาขา</option>
                                 <option>โออิชิแกรนด์ สยามพารากอน</option>
                                 <option>โออิชิบุฟเฟ่ต์ ซีคอนสแควร์</option>
                                 <option>โออิชิบุฟเฟ่ต์ ซีคอนบางแค</option>
@@ -34,11 +35,12 @@
                             </select>
                         </div>
                     </div>
-                    <br>
-                    <div class="panel-heading">
+                </div>
+              
+                    <div class="">
                         <h5 class="panel-title" style="color:lightseagreen;"><strong>คุณภาพ</strong></h5>
                     </div>
-                </div>
+              
 
                 <div class="mail-item mail-success">
                     <br>
@@ -49,15 +51,15 @@
                             </h6>
                             <div class="stars">
                                 <form action="">
-                                    <input class="star star-5" id="star-1" type="checkbox" name="star" />
+                                    <input class="star star-5" id="star-1" type="radio" name="star" />
                                     <label class="star star-5" for="star-1"></label>
-                                    <input class="star star-4" id="star-2" type="checkbox" name="star" />
+                                    <input class="star star-4" id="star-2" type="radio" name="star" />
                                     <label class="star star-4" for="star-2"></label>
-                                    <input class="star star-3" id="star-3" type="checkbox" name="star" />
+                                    <input class="star star-3" id="star-3" type="radio" name="star" />
                                     <label class="star star-3" for="star-3"></label>
-                                    <input class="star star-2" id="star-4" type="checkbox" name="star" />
+                                    <input class="star star-2" id="star-4" type="radio" name="star" />
                                     <label class="star star-2" for="star-4"></label>
-                                    <input class="star star-1" id="star-5" type="checkbox" name="star" />
+                                    <input class="star star-1" id="star-5" type="radio" name="star" />
                                     <label class="star star-1" for="star-5"></label>
                                 </form>
                             </div>
