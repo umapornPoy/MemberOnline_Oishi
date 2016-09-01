@@ -225,7 +225,6 @@
     <Content Include="MemberOnlineJS\app.js" />
     <Content Include="MemberOnlineJS\card.js" />
     <Content Include="MemberOnlineJS\index.js" />
-    <Content Include="MemberOnlineJS\js.js" />
     <Content Include="MemberOnlineJS\picture.js" />
     <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />
@@ -1055,6 +1054,7 @@
     <Content Include="Templete\js\jquery.flip.min.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Register\Editmember.cshtml" />
+    <Content Include="Views\Register\Addcard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
