@@ -27,3 +27,14 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
+
+
+div.stars1 {
+  width: 270px;
+  display: inline-block;
+
+}
+
+.bg-panel{
+    background-color:darkcyan
+}
