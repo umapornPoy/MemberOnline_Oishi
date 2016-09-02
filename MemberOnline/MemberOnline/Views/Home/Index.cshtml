@@ -70,11 +70,32 @@
                 <li>
                     <a href="/#/feedback" onclick="parent.location.reload();"><span class="fa fa-star"></span> <span class="xn-text">Feedback</span></a>
                 </li>
+
                 <li>
-                    <a href="/Login/Login"><span class="fa fa-sign-out"></span> <span class="xn-text">Log out</span></a>
+                    <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span><span class="xn-text">Log out</span></a>          
+                    <!-- MESSAGE BOX-->
+                    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+                        <div class="mb-container">
+                            <div class="mb-middle">
+                                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                                <div class="mb-content">
+                                    <p>Are you sure you want to log out?</p>
+                                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                                </div>
+                                <div class="mb-footer">
+                                    <div class="pull-right">
+                                        <a href="/Login/Login" class="btn btn-success btn-lg">Yes</a>
+                                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MESSAGE BOX-->
                 </li>
             </ul>
             <!-- END X-NAVIGATION -->
+
         </div>
         <!-- END PAGE SIDEBAR -->
         <!-- PAGE CONTENT -->
