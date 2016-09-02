@@ -10,75 +10,68 @@
         display: inline-block;
         z-index: 1;
         left: 65%;
-        bottom:50%;        
-      top:50%;
-        width:100%;    
+        bottom: 50%;
+        top: 50%;
+        width: 100%;
+    } 
+     #head{
+    color: #333;
+    background-color:darkred;
+    border-color: #5c5151;
     }
+   
 </style>
 
-<div class="panel-heading">
-    <h1 class="panel-title" style="color:darkred"><strong>Your Cards</strong></h1>
-</div>
-<div class="bg">
+    <div class="panel panel-default">
 
-    <div class="panel-body padding-2">
+        <div id="head" class="panel-heading ui-draggable-handle">
+            <h3 class="panel-title" style="color:white">OISHI PRIMIER CARD </h3>
+        </div>
         <div class="row">
-            <div class="timeline-heading">
-                <h4>
-                    <strong>OISHI PRIMIER CARD</strong>
-                    <span class="fa fa-hand-o-down"></span>
-                </h4>
-            </div>
+            <div class="panel-body">
+                <div class="col-md-4">
+                    <div class="widget-item-left">
 
-            <div class="col-md-4">
-                <div class="widget-item-left">
-
-                    <div class="timeline-item-content">
+                        <div class="timeline-item-content">
 
 
-                        <section class="container">
-                            <div class="card pull-right" onclick="flip()">
-                                <div class="front">
-                                    <img src="~/Images/Register/card3.png" class="img-text img-responsive">
+                            <section class="container">
+                                <div class="card pull-right" onclick="flip()">
+                                    <div class="front">
+                                        <img src="~/Images/Register/card3.png" class="img-text img-responsive">
+                                    </div>
+                                    <div class="back">
+                                        <img src="~/Images/card/cards-barcode.png" class="img-text img-responsive">
+                                    </div>
                                 </div>
-                                <div class="back">
-                                    <img src="~/Images/card/cards-barcode.png" class="img-text img-responsive">
-                                </div>
-                            </div>
 
-                            
+                            </section>
 
-                        </section>
-                       
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="widget-item-right">
-                    <div class="text-left">
-                        <h3 style="color:white"><span class="fa fa-user" style="color:black"> Yourname : รัตนาภรณ์  สมนึก</span></h3>
-                        <h3 style="color:white"><span class="fa fa-credit-card" style="color:black"> Card No. : 0001-4696</span></h3>
-                        <h3 style="color:white"><span class="fa fa-heart" style="color:black"> Points : 11    </span></h3>
-                        <h3 style="color:white"><span class="fa fa-clock-o" style="color:black"> Expire : 01-05-2017 </span> </h3>
-
-                        <button onclick="parent.location='#/Card'" class="btn btn-info"><span class="fa fa-plus"></span> Add card</button>
-                        <button onclick="flip()" class="btn btn-info">Barcode</button>
-                        <button class="btn btn-info">  History</button>
-
+                <div class="col-md-6">
+                    <div class="widget-item-right">
+                        <div class="text-left">
+                            <h3 style="color:white"><span class="fa fa-user" style="color:black"> Yourname : รัตนาภรณ์  สมนึก</span></h3>
+                            <h3 style="color:white"><span class="fa fa-credit-card" style="color:black"> Card No. : 0001-4696-1234-7890</span></h3>
+                            <h3 style="color:white"><span class="fa fa-heart" style="color:black"> Points : 11    </span></h3>
+                            <h3 style="color:white"><span class="fa fa-clock-o" style="color:black"> Expire : 01-05-2017 </span> </h3>
+                        </div>
                     </div>
+                    <button onclick="parent.location='#/Card'" class="btn btn-info"><span class="fa fa-plus"></span> Add card</button>
+                    <button onclick="flip()" class="btn btn-info">Barcode</button>
+                    <button class="btn btn-info">  History</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
 
 <script>
-    function flip() {
-        $('.card').toggleClass('flipped');
-    }
+     function flip() {
+     $('.card').toggleClass('flipped');
+     }
 </script>
 <style>
     .container {
@@ -89,9 +82,8 @@
         -moz-perspective: 800px;
         -o-perspective: 800px;
         perspective: 800px;
-        float:left;
-        z-index : 1;
-  
+        float: left;
+        z-index: 1;
     }
 
     .card {
@@ -139,3 +131,4 @@
             transform: rotateY( 180deg );
         }
 </style>
+        
