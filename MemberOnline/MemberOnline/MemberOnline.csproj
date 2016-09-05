@@ -2126,7 +2126,6 @@
     <Content Include="Views\News\News.cshtml" />
     <Content Include="Views\News\Detail.cshtml" />
     <Content Include="Views\News\Unread.cshtml" />
-    <Content Include="Views\Register\Picture.cshtml" />
     <Content Include="Views\Register\Card.cshtml" />
     <Content Include="Views\Home\dashboard.cshtml" />
     <Content Include="Views\Home\feedback.cshtml" />
