@@ -1,4 +1,4 @@
-﻿var app = angular.module('MemberOnline', ['ngRoute']);
+﻿var app = angular.module('MemberOnline', ['ngRoute', 'ui.bootstrap']);
 
 app.config(function ($routeProvider) {
     $routeProvider

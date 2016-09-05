@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" id="theme" href="~/Templete/css/theme-default.css" />
     <!-- EOF CSS INCLUDE -->
     <link href="~/Content/dx.common.css" rel="stylesheet" />
+    <link href="~/Templete/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Templete/css/tabs.css" rel="stylesheet" />
+
     <style>
         #scrollArea {
             height: 545px;
@@ -22,7 +25,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" ng-controller="RegisterController">
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -128,15 +131,19 @@
                                 <input type="text" class="form-control" value="" placeholder="example@email.com" />
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label class="col-md-3 col-xs-4 control-label">Date of Birth</label>
-                            <div class="col-md-6 col-xs-8">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
-                                    <input type="text" class="form-control" value="07-07-2014" id="dp-4" data-date="07-07-2014" data-date-format="dd-mm-yyyy" data-date-viewmode="months" />
+                            <label class="col-sm-3 col-xs-4 control-label no-padding-right" for="DocumentDate">date of birth</label>
+                            <div class="col-md-6 col-xs-7">
+                                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                                    <div class="control-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" ng-click="openStart()" min-date="minStartDate" max-date="maxStartDate" uib-datepicker-popup="dd-MM-yyyy" ng-model="start" is-open="popupStart.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" show-button-bar="false" />
+                                            <span class="input-group-addon">
+                                                <i class="ace-icon fa fa-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="help-block">Click on input field to get datepicker</span>
                             </div>
                         </div>
 
@@ -163,16 +170,12 @@
             </div>
         </div>
     </div>
-       
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    <script src="~/MemberOnlineJS/app.js"></script>
+    <script src="~/MemberOnlineJS/register.js"></script>
+    <script data-require="ui-bootstrap@1.0.0" data-semver="1.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
 </body>
 </html>
-
-
-    <script src="~/MemberOnlineJS/tabs.js"></script>
-    <link href="~/Templete/css/tabs.css" rel="stylesheet" />
-    <script src="~/MemberOnlineJS/picture.js"></script>
- 
-    <script src="~/Templete/js/plugins/bootstrap/bootstrap-datepicker.js"></script>
-
-
-
