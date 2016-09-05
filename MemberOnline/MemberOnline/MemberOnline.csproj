@@ -1057,6 +1057,7 @@
     <Content Include="Web.config" />
     <Content Include="Views\Register\Editmember.cshtml" />
     <Content Include="Views\Register\Addcard.cshtml" />
+    <None Include="Properties\PublishProfiles\Oishi_member_online.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
