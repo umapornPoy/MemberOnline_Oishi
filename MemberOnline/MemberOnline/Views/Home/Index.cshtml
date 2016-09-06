@@ -19,6 +19,12 @@
             overflow: auto;
         }
     </style>
+    <script>
+        $('.nav a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+           
+        });
+    </script>
 </head>
 
 <body>
@@ -27,7 +33,7 @@
         <!-- START PAGE SIDEBAR -->
         <div class="page-sidebar">
             <!-- START X-NAVIGATION -->
-            <ul class="x-navigation">
+            <ul class="x-navigation nav">
                 <li class="xn-logo">
                     <a href="index.html">OISHI</a>
                     <a href="#" class="x-navigation-control"></a>
@@ -60,15 +66,16 @@
                 </li>
 
                 <li>
-                    <a href="/#/Editmember"  onclick="window.parent.location.reload();"><span class="fa fa-edit"></span> <span class="xn-text">Edit Member</span></a>
+                    <a href="/#/Editmember"  onclick="window.document.location.reload(true);"><span class="fa fa-edit"></span> <span class="xn-text">Edit Member</span></a>
                 </li>
 
                 <li>
-                    <a href="/#/maps" onclick="window.parent.location.reload();"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                    <a href="/#/maps" onclick="window.document.location.reload(true);"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
                 </li>
 
                 <li>
-                    <a href="/#/feedback" onclick="window.parent.location.reload();"><span class="fa fa-star"></span> <span class="xn-text">Feedback</span></a>
+                    <a href="/#/feedback"onclick="window.document.location.reload(true);"><span class="fa fa-star"></span> <span class="xn-text">Feedback</span></a>
+                    
                 </li>
 
                 <li>
