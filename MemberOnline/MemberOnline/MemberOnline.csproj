@@ -1058,6 +1058,7 @@
     <Content Include="Web.config" />
     <Content Include="Views\Register\Editmember.cshtml" />
     <Content Include="Views\Register\Addcard.cshtml" />
+    <None Include="Properties\PublishProfiles\oishi.pubxml" />
     <None Include="Properties\PublishProfiles\Oishi_member_online.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2151,6 +2152,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
