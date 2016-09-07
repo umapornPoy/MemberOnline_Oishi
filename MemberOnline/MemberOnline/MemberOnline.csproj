@@ -1064,6 +1064,7 @@
     <Content Include="Views\Register\Addcard.cshtml" />
     <None Include="Properties\PublishProfiles\oishi.pubxml" />
     <None Include="Properties\PublishProfiles\Oishi_member_online.pubxml" />
+    <Content Include="Views\Maps\maps2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

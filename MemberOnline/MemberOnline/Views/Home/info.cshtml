@@ -40,8 +40,8 @@
                                 <p>ศูนย์การค้าสยามพารากอน ถ.พระราม 1 แขวง ปทุมวัน เขต ปทุมวัน กรุงเทพฯ 10330</p>
                             </div>
                             <br>
-                            <p><a href="/#/showMap"><span class="fa fa-map-marker "><strong>Show Map</strong></span></a></p>
-                            <br><br>
+                            <button class="button button2" onclick="parent.location='/#/showMap'"><span class="fa fa-map-marker "><strong> Show Map</strong></span></button>
+                            <br><br><br><br>
                             <div class="login-footer">
                             </div>
                         </div>
@@ -69,5 +69,36 @@ function carousel() {
     setTimeout(carousel, 2500);
 }
 </script>
+
+<style>
+    .button {
+        background-color: white; /* Green */
+        border: none;
+        color: #4CAF50;
+        padding: 6px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+   
+    .button2 {border-radius: 12px;}
+
+    .button2 {
+        background-color: #008CBA;
+        color: white;
+        border: 2px solid #008CBA;
+    }
+
+        .button2:hover {
+            background-color: white;
+            color: #008CBA;
+        }
+
+</style>
 
 <!-- END CONTENT FRAME BODY -->
