@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="body-full-height" ng-app="MemberOnline">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-8">
+            <!-- START GOOGLE WORLD MAP -->
+            <div class="panel panel-default">
+                <div class="panel-body panel-body-map table-responsive">
+                    <div class="panel-body panel-body-map">
+                        <div id="map" style="width: 100%; height: 482px"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END GOOGLE WORLD MAP-->
+        </div>
+    </div>
+
+
+
+    <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 68%;
+            // This is the aspect ratio height: 0;
+            overflow: hidden;
+        }
+
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+    </style>
+
+    <div id="map"></div>
+
+
+    <script>
+
+        // The following example creates complex markers to indicate beaches near
+        // Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+        // to the base of the flagpole.
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: { lat: 13.757792, lng: 100.492984 }
+            });
+
+            setMarkers(map);
+        }
+
+        // Data for the markers consisting of a name, a LatLng and a zIndex for the
+        // order in which these markers should display on top of each other.
+        var oishis = [
+          ['โออิชิบุฟเฟ่ต์ Major Avenue', 13.831637, 100.583606, 4],
+          ['โออิชิบุฟเฟ่ต์ ไอทีสแคร์', 13.890382, 100.598026, 5],
+          ['โอิชิราเมน เซนทรัลรัตนาธิเบศร์', 13.868384, 100.460011, 3],
+          ['โออิชิบุฟเฟ่ต์ บิ๊กซีพระราม4', 13.718344, 100.597340, 2],
+          ['ชาบูชิ เซนทรัลเวิลด์พลาซ่า', 13.743691, 100.563007, 1]
+        ];
+
+        function setMarkers(map) {
+            // Adds markers to the map.
+
+            // Marker sizes are expressed as a Size of X,Y where the origin of the image
+            // (0,0) is located in the top left of the image.
+
+            // Origins, anchor positions and coordinates of the marker increase in the X
+            // direction to the right and in the Y direction down.
+            //var image = {
+            //    url: 'http://cdn.com/my-custom-icon.png',
+            //  // This marker is 20 pixels wide by 32 pixels high.
+            //  size: new google.maps.Size(20, 32),
+            //  // The origin for this image is (0, 0).
+            //  origin: new google.maps.Point(0, 0),
+            //  // The anchor for this image is the base of the flagpole at (0, 32).
+            //  anchor: new google.maps.Point(0, 32)
+            //};
+            // Shapes define the clickable region of the icon. The type defines an HTML
+            // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+            // The final coordinate closes the poly by connecting to the first coordinate.
+
+            var shape = {
+                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                type: 'poly'
+            };
+
+            for (var i = 0; i < oishis.length; i++) {
+                var oishi = oishis[i];
+                var marker = new google.maps.Marker({
+                    position: { lat: oishi[1], lng: oishi[2] },
+                    map: map,
+                    shape: shape,
+                    title: oishi[0],
+                    zIndex: oishi[3]
+                });
+            }
+        }
+    </script>
+
+
+    <script src="~/MemberOnlineJS/tabs.js"></script>
+    <link href="~/Content/layouts/tabs.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGlI5Aps4McAxmCmbPJiuhwK3OakNsbg&callback=initMap"
+            async defer></script>
+
+
+</body>
+</html>

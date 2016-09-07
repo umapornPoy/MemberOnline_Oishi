@@ -1,6 +1,6 @@
 ﻿
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <!-- START GOOGLE WORLD MAP -->
                     <div class="panel panel-default">
                         <ul id="tabs">
@@ -8,15 +8,20 @@
                             <li><a href="/#/mapsByName" title="tab2"> Sort by name </a></li>
                         </ul>
                         <div class="panel-body panel-body-map table-responsive">
-                            <div id="map" style="width: 100%; height: 100%; "></div>
+                                <div class="google-maps">
+                                    <iframe src="http://localhost:61598/Maps/maps2"
+                                        width="735" height="450" frameborder="0" style="border:0">
+
+                                    </iframe>
+                                </div>
                         </div>
                     </div>
                     <!-- END GOOGLE WORLD MAP-->
                 </div>
 
-                <div class="row" style="height:200px;">
+                <div class="row">
 
-                    <div class="col-md-5">
+                    <div class="col-md-4" >
 
                         <!-- START VISITORS BLOCK -->
                         <div class="panel panel-default" id="scrollArea">
@@ -132,20 +137,24 @@
 <meta charset="utf-8">
 <title>Complex icons</title>
 <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+    .google-maps {
+        position: relative;
+        padding-bottom: 68%;
+        // This is the aspect ratio height: 0;
+        overflow: hidden;
     }
 
-    #map {
-        height: 500px;
-    }
-
-  
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
 </style>
 
 <div id="map"></div>
+
 
 <script>
 
