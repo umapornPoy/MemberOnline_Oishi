@@ -203,8 +203,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\card\Barcode-card.png" />
     <Content Include="Images\card\bg_img2.jpg" />
+    <Content Include="Images\card\card4.png" />
     <Content Include="Images\card\cards-barcode.png" />
+    <Content Include="Images\card\QRcode-card.png" />
     <Content Include="Images\feedback\bg_img_feedback.jpg" />
     <Content Include="Images\index\profile.png" />
     <Content Include="Images\index\profile2.jpg" />
@@ -228,6 +231,7 @@
     <Content Include="MemberOnlineJS\editmember.js" />
     <Content Include="MemberOnlineJS\index.js" />
     <Content Include="MemberOnlineJS\picture.js" />
+    <Content Include="MemberOnlineJS\point.js" />
     <Content Include="MemberOnlineJS\register.js" />
     <Content Include="MemberOnlineJS\slideshow.js" />
     <Content Include="MemberOnlineJS\tabs.js" />

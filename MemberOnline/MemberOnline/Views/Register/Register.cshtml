@@ -131,13 +131,15 @@
                                 <input type="text" class="form-control" value="" placeholder="example@email.com" />
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label class="col-sm-3 col-xs-2 col-sm-3 control-label no-padding-right" for="DocumentDate">Birth day</label>
-                            <div class="col-md-6 col-xs-10 col-sm-6">
+                            <label class="col-md-3 col-sm-4 col-xs-2 control-label" for="DocumentDate">Birth day</label>
+                            <div class="col-md-6 col-sm-8 col-xs-10">
                                 <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" ng-click="openStart()" min-date="minStartDate" max-date="maxStartDate" uib-datepicker-popup="dd-MM-yyyy" ng-model="start" is-open="popupStart.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" show-button-bar="false" />
+                                            <input type="text" class="form-control datepicker ng-pristine ng-valid ng-isolate-scope ng-not-empty ng-valid-date ng-valid-required ng-touched" ng-click="openStart()" min-date="minStartDate" max-date="maxStartDate" uib-datepicker-popup="dd-MM-yyyy" ng-model="start" is-open="popupStart.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" show-button-bar="false" required="required"/>
+       
                                             <span class="input-group-addon">
                                                 <i class="ace-icon fa fa-calendar"></i>
                                             </span>

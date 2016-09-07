@@ -1,74 +1,108 @@
 ﻿<style>
-    #barcode {
-        position:absolute;
-        display:inline-block;
+  /*#barcode {
+        position: absolute;
+        display: inline-block;
         z-index: 1;
         left: 65%;
         bottom: 50%;
         top: 50%;
         width: 100%;
-    } 
+    }*/  
 
-     #head{
-    color: #333;
-    background-color:darkred;
-    border-color: #5c5151;
+   #head {
+        color: #333;
+        background-color: darkred;
+        border-color: #5c5151;
     }
-   
 </style>
 
-    <div class="panel panel-default" ng-controller="RegisterController">
+<div class="panel panel-default" ng-controller="RegisterController">
 
-        <div id="head" class="panel-heading ui-draggable-handle">
-            <h3 class="panel-title" style="color:white">OISHI PRIMIER CARD </h3>
-        </div>
-        <div class="row">
-            <div class="panel-body">
-                <div class="col-md-5 col-sm-6">
-                    <div class="widget-item-left">
+    <div id="head" class="panel-heading ui-draggable-handle">
+        <h3 class="panel-title" style="color:white">OISHI PRIMIER CARD </h3>
+    </div>
+    <div class="row">
+        <div class="panel-body">
+            <div class="col-md-5 col-sm-6">
+                <div class="widget-item-left">
 
-                        <div class="timeline-item-content">
+                    <div class="timeline-item-content">
 
 
-                            <section class="container">
-                                <div class="card pull-right" onclick="flip()">
-                                    <div class="front">
-                                        <img src="~/Images/Register/card3.png" class="img-text img-responsive">
-                                    </div>
-                                    <div class="back">
-                                        <img src="~/Images/card/cards-barcode.png" class="img-text img-responsive">
-                                    </div>
+                        @*<section class="container">
+                            <div class="card pull-right" onclick="flip()">*@
+                                <div class="front">
+                                   
+                                    <img src="~/Images/card/card4.png" class="img-responsive">
                                 </div>
+                                @*<div class="back">
+                                    <img src="~/Images/card/cards-barcode.png" class="img-text img-responsive">
+                                </div>
+                            </div>
 
-                            </section>
+                        </section>*@
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-7 col-sm-6">
-                    <div class="widget-item-right">
-                        <div class="text-left">
-                            <h3 style="color:white"><span class="fa fa-user" style="color:black"> Yourname : รัตนาภรณ์  สมนึก</span></h3>
-                            <h3 style="color:white"><span class="fa fa-credit-card" style="color:black"> Card No. : 0001-4696-1234-7890</span></h3>
-                            <h3 style="color:white"><span class="fa fa-heart" style="color:black"> Points : 11    </span></h3>
-                            <h3 style="color:white"><span class="fa fa-clock-o" style="color:black"> Expire : 01-05-2017 </span> </h3>
-                        </div>
+            <div class="col-md-7 col-sm-6 ">
+                <div class="widget-item-right">
+                    <div class="text-left">
+                        <h3 style="color:white"><span class="fa fa-user" style="color:black"> Yourname : รัตนาภรณ์  สมนึก</span></h3>
+                        <h3 style="color:white"><span class="fa fa-credit-card" style="color:black"> Card No. : 0001-4696-1234-7890</span></h3>
+                        <h3 style="color:white"><span class="fa fa-heart" style="color:black"> Points : 11    </span></h3>
+                        <h3 style="color:white"><span class="fa fa-clock-o" style="color:black"> Expire : 01-05-2017 </span> </h3>
                     </div>
-                    <button onclick="parent.location='/#/Card'" class="btn btn-info"><span class="fa fa-plus"></span> Add card</button>
-                    <button onclick="flip()" class="btn btn-info">Barcode</button>
-                    <button class="btn btn-info">  History</button>
                 </div>
+                <button onclick="parent.location='/#/Card'" class="btn btn-info"><span class="fa fa-plus"></span> Add card</button>
+                @*<button onclick="flip()" class="btn btn-info">Barcode</button>*@
+                <button class="btn btn-info" data-toggle="modal" data-target="#modal_basic">QRcode</button>
+                <button class="btn btn-info" data-toggle="modal" data-target="#modal_basic2">Barcode</button>
             </div>
         </div>
     </div>
+</div>
+<div class="modal" id="modal_basic" tabindex="-1" role="dialog" aria-labelledby="defModalHead" aria-hidden="true" align="center">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="defModalHead">Basic Modal</h4>
+            </div>
+            <div class="modal-body">
+                <img src="~/Images/card/QRcode-card.png" class="img-responsive" >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal_basic2" tabindex="-1" role="dialog" aria-labelledby="defModalHead" aria-hidden="true" align="center">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="defModalHead">Basic Modal</h4>
+            </div>
+            <div class="modal-body">  
+                <img src="~/Images/card/Barcode-card.png" class="img-responsive" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script>
      function flip() {
      $('.card').toggleClass('flipped');
      }
 </script>
-<style>
+@*<style>
     .container {
         width: 250px;
         height: 200px;
@@ -125,11 +159,18 @@
             -o-transform: rotateY( 180deg );
             transform: rotateY( 180deg );
         }
-</style>
+</style>*@
 <script src="~/Scripts/angular.min.js"></script>
 <script src="~/Scripts/angular-route.js"></script>
 <script src="~/Scripts/angular-sanitize.js"></script>
 <script src="~/MemberOnlineJS/app.js"></script>
 <script data-require="ui-bootstrap@1.0.0" data-semver="1.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
 
+
+
+              
+
+
+
         
+     
