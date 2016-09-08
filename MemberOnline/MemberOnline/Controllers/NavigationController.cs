@@ -13,5 +13,9 @@ namespace MemberOnline.Controllers
         {
             return View();
         }
+        public ActionResult Navigation2()
+        {
+            return View();
+        }
     }
 }

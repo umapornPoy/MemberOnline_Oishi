@@ -1,0 +1,81 @@
+﻿
+<div class="row">
+
+    <div class="col-md-12">
+        <!-- START GOOGLE WORLD MAP -->
+        <div class="panel panel-default">
+
+            <div class="panel-body panel-body-map">
+                <div id="map" style="width: 100%; height: 650px"></div>
+            </div>
+        </div>
+        <!-- END GOOGLE WORLD MAP-->
+    </div>
+</div>
+
+
+<style type="text/css">
+  
+</style>
+
+
+
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<title>Simple markers</title>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+  /* #map {
+        height: 100%;
+    } */ 
+</style>
+
+<div id="map"></div>
+<script>
+
+      function initMap() {
+          var myLatLng = { lat: 13.747049, lng: 100.535410 };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng
+        });
+
+        var contentString = '<div id="content">' +
+   '<div id="siteNotice">' +
+   '</div>' +
+   '<h1 id="firstHeading" class="firstHeading">Oishi</h1>' +
+   '<div id="bodyContent">' +
+   '<p><b>โออิชิแกรนด์ สยามพารากอน</b>'+
+   '<p>ศูนย์การค้าสยามพารากอน ถ.พระราม 1 แขวง ปทุมวัน เขต ปทุมวัน กรุงเทพฯ 10330 </p>' +
+   '</p>' +
+   '<p>Attribution: Oishi, <a href="http://www.oishigroup.com/product_grand.php">' +
+      'http://www.oishigroup.com/product_grand.php </a> ' +
+      '</p>' +
+   '</div>' +
+   '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'โออิชิแกรนด์ สยามพารากอน'
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOGlI5Aps4McAxmCmbPJiuhwK3OakNsbg&callback=initMap"
+        async defer></script>
