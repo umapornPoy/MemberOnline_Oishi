@@ -58,4 +58,5 @@ app.config(function ($routeProvider) {
         .otherwise({
             templateUrl: "Home/Index"
         })
+
 });
